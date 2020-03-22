@@ -1,0 +1,1 @@
+pip install --index-url https://test.pypi.org/simple/ --no-deps cdc_test_data_scraper-dryampy
