@@ -1,6 +1,7 @@
 import requests
 import datetime
 import numpy as np
+import pandas as pd
 from bs4 import BeautifulSoup
 
 
@@ -16,7 +17,13 @@ class us_tests_cdc:
         soup = BeautifulSoup(response.text, 'html.parser')
         table = soup.find('table')
         table = self._format(table)
-        return table
+
+        df = pd.DataFrame(table)
+        new_header = df.iloc[0]  # grab the first row for the header
+        df = df[1:]  # take the data less the header row
+        df.columns = new_header  # set the header row as the df header
+
+        return df
 
     def _format(self, table):
 

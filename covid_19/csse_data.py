@@ -77,6 +77,7 @@ class csse_retrieve:
         df_reco = df_reco.melt(id_vars=['loc_id', 'metric_id'], var_name='date', value_name='counts')
 
         self.final = pd.concat([df_deaths, df_conf, df_reco])
+        self.final['date'] = pd.to_datetime(self.final['date'], format='%m/%d/%y')
         self.dim_location = dim_location
         self.dim_metric = dim_metric
 
