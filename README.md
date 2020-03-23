@@ -64,7 +64,7 @@ final2.plot(kind='line',x='date',y='total_counts_cases', color='red', ax=ax)
 
 plt.show()
 ```
-yielding;
+
 ![Image description](https://github.com/DrYampy/covid_19/blob/master/Readme_example.png)
 
 ## Authors
