@@ -67,6 +67,13 @@ plt.show()
 
 ![Image description](https://github.com/DrYampy/covid_19/blob/master/Readme_example.png)
 
+## Sources
+
+US Test Data scraped from;
+https://www.cdc.gov/coronavirus/2019-ncov/cases-updates/testing-in-us.html
+World Confirmed/Recovered/Death data from
+https://github.com/CSSEGISandData/COVID-19
+
 ## Authors
 
 * **Steven Yampolsky**
