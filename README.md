@@ -21,7 +21,8 @@ python3 -m pip install covid-19-dryampy
 from covid_19.us_tests_cdc import us_tests_cdc
 
 scraper = us_tests_cdc()
-print(scrape.fetch())
+print(scraper.fetch())
+
 ```
 
 ## Authors

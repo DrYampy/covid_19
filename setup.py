@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="covid-19-dryampy", # Replace with your own username
-    version="0.1.1",
+    version="0.3.5",
     author="Steven Yampolsky",
     author_email="syampols@gmail.com",
     description="packages used to throw around covid-19 data.",
